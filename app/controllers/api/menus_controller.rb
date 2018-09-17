@@ -37,7 +37,7 @@ class Api::MenusController < ApplicationController
     @menu = Menu.find(params[:id])
   end
 
-  def manu_params
+  def menu_params
     params.require(:menu).permit(:name)
   end
 end
